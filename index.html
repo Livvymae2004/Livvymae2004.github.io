@@ -1,0 +1,88 @@
+<html>
+   <head>
+        <link type="text/css" rel="stylesheet" href="main.css" /> 
+     <title> I LOVE PIZZA!!</title>
+              <style> <link type="text/css" rel="stylesheet" href="main.css" /> </style>
+<script type="text/javascript">
+function banner(){
+var text = confirm("Did You Really Want to Click on My Banner?");
+return text;
+} 
+
+
+function answer(){
+ 
+     var radio = document.getElementsByName("trivia");
+  var selection = false;
+var message = "";
+
+ for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "kiwi" && radio[i].checked == true) {
+selection = true;
+} //end if statement
+} //end for loop 
+
+
+ if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>";
+} else {
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+}
+document.getElementById("response").innerHTML = message;
+
+}//end function answer
+</script>
+  </head>
+<footer>  My name is Olivia Cruz and I made this website </footer>
+<body id="background">
+  <nav>
+    <ul id="navmenu">
+<li class="navitem"> <a href="index.html"> home </a></li>
+<li class="navitem">  <a href="games.html"> Games </a> </li>
+<liclass="navitem">  <a href="videos.html"> Videos </a></li>
+</ul></nav>
+
+ <a href="http://google.com" onclick="return banner()" > <header>HI</header> </a>
+   <h1> pizza </h1>
+         <p style="color:teal;"> I love pizza <u>love</u> pepperoni bacon pizza I do not like supreme pizza I love cheese pizza and I don't love three meat pizza. I don't like <i>soda</i> but I do like <span class="cat"> lemonade </span> I like <b>kiwi</b> lemonade you can find it at macey's. </p>
+         <div class="wrap-list">
+         <ol>
+          <div id="leftside">
+            <li class="listitem"> Bacon pizza is the best </li>
+                  <li class="listitem"> KIWI LEMONADE!!!</li>
+                      <li class="listitem"> I HATE SODA </li>
+                    </ol>
+                    </div>
+                  </div>
+                  <div id="clrfloat"></div>
+                     <div id="rightside">
+                      <div class="wrap-trivia">
+                        <h2> Drink trivia </h2>
+             <p style="font-size:20px;"> what is my favorite drink? </p>
+          <form> 
+            <div id="response"> </div>
+            <input type="radio" name="trivia" value="rootbeer"> Rootbeer<br> 
+         <input type="radio" name="trivia" value="kiwi"> Kiwi lemonade<br> 
+    <input type="radio" name="trivia" value="strawberry"> Strawberry lemonade<br>
+     <input type="radio" name="trivia" value="raspberry"> Blue raspberry lemonade<br>
+     <input type="button" id="submit" value="Click Here" onclick="answer()" > 
+           </form>
+         </div>
+       </div>
+         <img src="https://thumbs.dreamstime.com/z/pizza-6407314.jpg"/>
+      <img src="https://thumbs.dreamstime.com/z/cool-lemonade-2664642.jpg"/>
+           <hr>
+     <center>Olivia was here <a href="http://tacospin.com/"> this very weird </a> </center>
+
+     <p class="paragraph"> HI </p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
